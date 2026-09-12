@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade | Mais de 250 Receitas para Combater a Diabetes</title>
+<meta name="description" content="Como este site trata os seus dados: o que coletamos, o que não coletamos e quais são os seus direitos segundo a LGPD.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1E6B2B">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥗</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <div class="container cabecalho__interno">
+    <a class="marca marca--esquerda" href="index.html" aria-label="Voltar ao início">
+      <img class="marca__logo" src="img/logo-80.webp" srcset="img/logo-80.webp 1x, img/logo.webp 2x"
+           width="201" height="80" alt="Mais de 250 Receitas para Combater a Diabetes">
+    </a>
+  </div>
+</header>
+
+<main class="pagina-simples">
+  <div class="container container--estreito">
+    <a class="voltar" href="index.html">← Voltar ao site</a>
+    <h1>Política de Privacidade</h1>
+    <p><em>Última atualização: <span id="atualizacao">11 de setembro de 2026</span></em></p>
+
+    <p class="aviso-provisorio" data-editar>
+      ⚠️ PROVISÓRIO: preencha o nome/razão social e o CNPJ ou CPF do responsável na seção
+      "Quem é o responsável", confirme a plataforma de pagamento e, se ativar Google Analytics
+      ou Pixel do Meta em <code>js/config.js</code>, mantenha a seção "Cookies e medição" —
+      caso contrário, pode removê-la.
+    </p>
+
+    <h2>1. Quem é o responsável</h2>
+    <p>Este site é operado por <strong data-brand="name">Mais de 250 Receitas para Combater a Diabetes</strong>
+      <span id="responsavel"></span>, responsável pelo tratamento dos dados descritos aqui
+      nos termos da Lei Geral de Proteção de Dados (Lei 13.709/2018 — LGPD).</p>
+
+    <h2>2. O que este site <u>não</u> coleta</h2>
+    <p>Este site é uma página estática de apresentação do guia digital. Ele <strong>não possui
+      formulários de cadastro, não pede e-mail, não armazena senhas e não processa pagamentos.</strong>
+      Nenhum dado de cartão, CPF ou endereço passa por aqui.</p>
+
+    <h2>3. Pagamento e entrega</h2>
+    <p>Ao clicar em "Quero meu guia", você é redirecionado para a página de pagamento da
+      <strong data-checkout="platform">Void Payments</strong>. Nome, e-mail, CPF e dados de pagamento são
+      informados diretamente a essa plataforma, que é a responsável pelo processamento, pela emissão
+      de comprovantes e pela entrega do guia. O tratamento desses dados segue a política de
+      privacidade da própria plataforma. Recebemos dela apenas o necessário para prestar suporte
+      (nome, e-mail e produto adquirido).</p>
+
+    <h2>4. Contato pelo WhatsApp e e-mail</h2>
+    <p>Se você nos escrever pelo WhatsApp ou e-mail, usaremos as informações da conversa apenas
+      para responder à sua solicitação e prestar suporte sobre a compra. Não incluímos seu contato
+      em listas de divulgação sem o seu consentimento expresso.</p>
+
+    <h2 id="cookies">5. Cookies e medição de audiência</h2>
+    <p>Podemos utilizar ferramentas de medição de audiência (como Google Analytics e Pixel do Meta)
+      para entender, de forma agregada, quantas pessoas visitam o site e de onde vêm. Essas
+      ferramentas usam cookies e podem coletar dados como endereço IP anonimizado, tipo de
+      dispositivo e páginas visitadas. Você pode bloquear cookies nas configurações do navegador
+      sem prejuízo ao uso do site.</p>
+    <p id="semAnalytics" hidden><strong>No momento, nenhuma ferramenta de medição está ativa neste site.</strong></p>
+
+    <h2>6. Compartilhamento</h2>
+    <p>Não vendemos nem cedemos dados pessoais a terceiros. O compartilhamento ocorre apenas com a
+      plataforma de pagamento (para viabilizar a compra) e, se ativas, com as ferramentas de medição
+      citadas acima.</p>
+
+    <h2>7. Seus direitos</h2>
+    <p>Você pode, a qualquer momento, solicitar confirmação de tratamento, acesso, correção,
+      anonimização, portabilidade ou exclusão dos seus dados, além de revogar consentimentos.
+      Basta entrar em contato pelos canais indicados no rodapé do site. Responderemos em até 15 dias.</p>
+
+    <h2>8. Reembolso e direito de arrependimento</h2>
+    <p>Compras feitas pela internet podem ser canceladas em até 7 dias corridos após a aquisição,
+      com devolução integral do valor (Código de Defesa do Consumidor, art. 49). A solicitação é
+      feita diretamente na plataforma de pagamento.</p>
+
+    <h2>9. Alterações</h2>
+    <p>Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data
+      da última revisão fica sempre indicada no topo desta página.</p>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="container rodape__base">
+    <p>© <span id="ano">2026</span> <span data-brand="name">Mais de 250 Receitas para Combater a Diabetes</span>.</p>
+    <p><a href="index.html">Voltar ao site</a></p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script>
+  (function () {
+    const S = window.SITE || {};
+    const b = S.brand || {};
+    document.querySelectorAll('[data-brand="name"]').forEach((el) => { if (b.name) el.textContent = b.name; });
+    document.querySelectorAll('[data-brand="tagline"]').forEach((el) => { if (b.tagline) el.textContent = b.tagline; });
+    document.querySelectorAll('[data-checkout="platform"]').forEach((el) => { if (S.checkout && S.checkout.platform) el.textContent = S.checkout.platform; });
+    document.getElementById('ano').textContent = new Date().getFullYear();
+    if (b.cnpj) document.getElementById('responsavel').textContent = `(CNPJ ${b.cnpj})`;
+    const a = S.analytics || {};
+    if (!a.gaMeasurementId && !a.metaPixelId) document.getElementById('semAnalytics').hidden = false;
+  })();
+</script>
+</body>
+</html>
