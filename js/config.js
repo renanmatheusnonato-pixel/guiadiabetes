@@ -14,7 +14,7 @@ window.SITE = {
     name: 'Mais de 250 Receitas para Combater a Diabetes',
     tagline: 'receitas para quem convive com diabetes',
     isPlaceholder: false,
-    siteUrl: 'https://SEU-DOMINIO.com.br/', // PROVISÓRIO — usado em canonical/OG
+    siteUrl: 'https://guiadiabetes.vercel.app/',
     email: 'sac.250receitas@gmail.com',
     cnpj: null,                         // ex.: '00.000.000/0001-00' (aparece no rodapé)
   },
