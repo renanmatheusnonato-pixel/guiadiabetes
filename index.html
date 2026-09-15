@@ -90,8 +90,10 @@
         </div>
       </figure>
 
-      <div class="hero__botoes">
-        <a class="btn btn--vermelho btn--grande" href="#para-quem">Ver o que tem no guia ↓</a>
+      <div class="hero__botoes hero__botoes--coluna">
+        <div id="heroAcao"></div>
+        <p class="hero__micro">Pix aprovado na hora · 7 dias de garantia · acesso imediato</p>
+        <a class="btn btn--secundario" href="#para-quem">Ver o que tem no guia ↓</a>
       </div>
       <ul class="confianca" aria-label="Garantias">
         <li>📩 Chega no seu e-mail em minutos</li>
@@ -145,18 +147,10 @@
         </article>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ============ DEPOIMENTOS (carrossel automático; aparece só com itens no config) ============ -->
-  <section class="secao depo" id="depoimentos" hidden>
-    <div class="container">
-      <header class="secao__cabecalho depo__cabecalho">
-        <h2 class="depo__titulo">Quem já assinou o guia <span class="depo__marca">já está tendo resultados</span><span class="depo__seta">↓</span></h2>
-      </header>
-    </div>
-    <div class="depo__janela" id="depoJanela" aria-label="Avaliações de leitores">
-      <div class="depo__trilho" id="depoTrilho"></div>
+      <div class="cta-meio">
+        <p class="cta-meio__texto">Tudo isso por <strong id="meioValor"></strong>, pagamento único.</p>
+        <div id="meioAcao"></div>
+      </div>
     </div>
   </section>
 
@@ -192,6 +186,18 @@
       </div>
 
       <p class="carrossel__nota">Estas são 5 das mais de 250 receitas do guia — uma para cada momento do dia.</p>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS (carrossel automático; aparece só com itens no config) ============ -->
+  <section class="secao depo" id="depoimentos" hidden>
+    <div class="container">
+      <header class="secao__cabecalho depo__cabecalho">
+        <h2 class="depo__titulo">Quem já garantiu o guia <span class="depo__marca">já está tendo resultados</span><span class="depo__seta">↓</span></h2>
+      </header>
+    </div>
+    <div class="depo__janela" id="depoJanela" aria-label="Avaliações de leitores">
+      <div class="depo__trilho" id="depoTrilho"></div>
     </div>
   </section>
 
@@ -335,9 +341,10 @@
         <details class="faq__item">
           <summary>Que adoçante as receitas usam?</summary>
           <div class="faq__resposta">
-            <p class="aviso-provisorio" data-editar>⚠️ PROVISÓRIO: responder com o que de fato for usado
-              no guia (ex.: eritritol, xilitol, estévia, sucralose) e se há indicação de como trocar
-              um pelo outro.</p>
+            <p>Nenhuma receita usa açúcar de mesa. Onde precisa adoçar, o guia indica "adoçante a gosto"
+              e você escolhe o seu — eritritol, xilitol, estévia ou sucralose. Nas receitas assadas
+              (bolos, cookies) a recomendação é o adoçante culinário, que aguenta o forno. Boa parte dos
+              doces é adoçada só com a fruta e o cacau.</p>
           </div>
         </details>
 
@@ -393,7 +400,7 @@
   <!-- ============ CHAMADA FINAL (botão direto para o checkout) ============ -->
   <section class="secao cta-final" id="cta-final">
     <div class="container cta-final__caixa">
-      <p class="cta-final__rotulo">Ainda com dúvida?</p>
+      <p class="cta-final__rotulo">Última chamada</p>
       <h2>Você tem 7 dias para testar sem risco.</h2>
       <p class="cta-final__texto">Mais de 250 receitas + 3 bônus, acesso imediato e garantia total. Se não for para você, devolvemos 100%.</p>
       <div class="cta-final__preco"><span id="finalDe"></span> <strong id="finalValor"></strong></div>

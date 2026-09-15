@@ -106,6 +106,10 @@
     }
     $('#ofertaAcao').innerHTML = botao;
 
+    // Topo e meio da página — mesmo botão, direto para o checkout
+    if ($('#heroAcao')) $('#heroAcao').innerHTML = botao;
+    if ($('#meioAcao')) { $('#meioAcao').innerHTML = botao; $('#meioValor').textContent = brl(o.price); }
+
     // Chamada final (fim da página) — mesmo botão, direto para o checkout
     if ($('#finalAcao')) {
       $('#finalDe').innerHTML = o.oldPrice ? `de <s>${brl(o.oldPrice)}</s> por` : '';
@@ -121,13 +125,12 @@
       $('#barraBtn').href = comRastreio(o.checkoutUrl);
       barra.hidden = false;
       document.body.classList.add('tem-barra');
-      const hero = $('#inicio'), oferta = $('#comprar');
       const atualizar = () => {
-        const passouHero = window.scrollY > (hero ? hero.offsetTop + hero.offsetHeight - 80 : 400);
-        // some enquanto a área de compra está na tela (para não duplicar botão)
-        const r = oferta ? oferta.getBoundingClientRect() : null;
-        const ofertaVisivel = r && r.top < window.innerHeight - 120 && r.bottom > 120;
-        barra.classList.toggle('barra-compra--visivel', passouHero && !ofertaVisivel);
+        // some enquanto qualquer botão de compra da página está na tela (para não duplicar)
+        const algumVisivel = $$('#heroAcao .btn, #meioAcao .btn, #ofertaAcao .btn, #finalAcao .btn').some((b) => {
+          const r = b.getBoundingClientRect(); return r.top < window.innerHeight - 60 && r.bottom > 60;
+        });
+        barra.classList.toggle('barra-compra--visivel', window.scrollY > 200 && !algumVisivel);
       };
       atualizar();
       window.addEventListener('scroll', atualizar, { passive: true });

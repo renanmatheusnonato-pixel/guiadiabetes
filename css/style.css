@@ -245,6 +245,18 @@ p { margin: 0 0 1em; }
 }
 
 .hero__botoes { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem; margin: 0 0 1.4rem; }
+.hero__botoes--coluna { flex-direction: column; align-items: center; gap: .6rem; width: 100%; }
+.hero__botoes--coluna #heroAcao { width: 100%; display: flex; justify-content: center; }
+.hero__botoes--coluna .btn--pulsar { width: 100%; max-width: 420px; font-size: clamp(1.05rem, 1rem + .5vw, 1.25rem); padding: 1.1rem 2rem; letter-spacing: .04em; }
+.hero__micro { margin: 0; font-size: .82rem; color: var(--tinta-suave); font-weight: 600; }
+.hero__botoes--coluna .btn--secundario { margin-top: .4rem; }
+@media (max-width: 560px) { .mockup { width: min(64%, 300px); } .hero__chamada { margin-bottom: 1.4rem; } }
+
+/* CTA no meio (depois dos 6 blocos) */
+.cta-meio { margin-top: 1.8rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: .7rem; }
+.cta-meio__texto { margin: 0; font-size: 1.05rem; color: var(--verde-900); font-weight: 600; }
+.cta-meio__texto strong { font-family: var(--fonte-headline); font-weight: 800; font-size: 1.3em; color: var(--verde-700); }
+.cta-meio .btn { width: 100%; max-width: 420px; font-size: 1.1rem; padding: 1.05rem 2rem; letter-spacing: .04em; }
 .confianca { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem 1.4rem; font-size: .92rem; color: var(--tinta-suave); font-weight: 600; }
 
 /* ---------- Seções ---------- */
